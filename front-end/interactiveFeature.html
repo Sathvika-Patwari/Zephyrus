@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number Game</title>
+  <link rel="stylesheet" href="interactiveFeature.css">
+</head>
+
+<body>
+
+  <div class="game-container">
+    <h1 id="game-heading">Let's Start Guessing!</h1>
+    <p>Guess a number between 1 and 10:</p>
+    <input type="number" id="userGuess" min="1" max="10">
+    <button onclick="checkGuess()">Guess</button>
+    <p id="message"></p>
+  </div>
+
+  <script src="interactiveFeature.js"></script>
+
+</body>
+
+</html>
+<!-- In this project, I created a simple "Guess the Number" game by splitting the code into three separate files: index.html, styles.css, and script.js.
+
+HTML (interactiveFeature.html):
+
+The HTML file contains the structure of the game, which includes a heading (<h1>) to display the game status, an input field for the user to enter their guess, a button to submit the guess, and a paragraph (<p>) to display feedback messages.
+It also links to the external CSS file (interactiveFeature.css) for styling and the external JavaScript file (interactiveFeature.js) to implement the game functionality.
+CSS (interactiveFeature.css):
+
+I used CSS to style the page, making it clean and user-friendly. The layout is centered using Flexbox, and I added styles for the input, button, and message display.
+The button has a hover effect for better user interaction, and the container is styled to look modern with rounded corners and a subtle shadow.
+JavaScript (interactiveFeature.js):
+
+In the JavaScript file, I generated a random number between 1 and 10 for the user to guess.
+The checkGuess() function checks the user's guess and provides feedback by updating the message and the heading. If the guess is too low, too high, or correct, the heading and message are updated accordingly.
+The updateHeading() function is responsible for dynamically changing the heading based on the game status, such as "Guessing, Too Low!" or "You Won!".
+This approach ensures that the game is modular and organized, with each part of the functionality placed in its respective file. The game provides an interactive experience with dynamic feedback and a clean, responsive layout. -->
